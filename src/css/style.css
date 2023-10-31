@@ -1,0 +1,26 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+
+  padding: 1rem;
+  justify-content: space-around;
+
+  background-color: black;
+}
+
+div > h2 {
+  color: white;
+  margin: 0.5rem;
+}
+
+div > h2:nth-child(1) {
+  color: red;
+}
