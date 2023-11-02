@@ -30,8 +30,6 @@ function addListenerHitBox() {
         state.values.count++;
         state.view.score.textContent = state.values.count;
         state.values.hitPosition = null;
-        console.log(w.id);
-        console.log(state.values.hitPosition);
         hitSound();
       } else {
         state.view.life.textContent--;
