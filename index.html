@@ -16,24 +16,50 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
 
     <link rel="stylesheet" href="./src/css/style.css" />
+
+    <link rel="stylesheet" href="./src/css/ralph.css" />
   </head>
   <body>
+    <nav>
+      <div class="menu-time">
+        <h2>Time Left</h2>
+        <h2>00:00</h2>
+      </div>
+      <div class="menu-score">
+        <h2>Your Score</h2>
+        <h2>0</h2>
+      </div>
+      <div class="menu-life">
+        <!--<div class="core"></div>-->
+        <h2>Lifes</h2>
+        <h2>5</h2>
+      </div>
+    </nav>
+    <!---
+ <div class="cloud"></div>
+-->
     <main>
-      <nav>
-        <div class="menu-time">
-          <h2>Time Left</h2>
-          <h2>00:00</h2>
+      <div class="painel">
+        <div class="painel-row">
+          <!--
+
+          <div class="pixelart"></div>
+         -->
+          <div class="square" id="0"></div>
+          <div class="square" id="0"></div>
+          <div class="square" id="0"></div>
         </div>
-        <div class="menu-score">
-          <h2>Your Score</h2>
-          <h2>0</h2>
+        <div class="painel-row">
+          <div class="square enemy" id="0"></div>
+          <div class="square" id="0"></div>
+          <div class="square" id="0"></div>
         </div>
-        <div class="menu-life">
-          <h2>Lifes</h2>
-          <h2>5</h2>
+        <div class="painel-row">
+          <div class="square" id="0"></div>
+          <div class="square" id="0"></div>
+          <div class="square" id="0"></div>
         </div>
-      </nav>
-      <div class="painel"></div>
+      </div>
     </main>
     <script src="./src/scripts/index.js"></script>
   </body>
