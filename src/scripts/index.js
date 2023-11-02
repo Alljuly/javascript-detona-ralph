@@ -10,9 +10,9 @@ const state = {
     nivelVelocity: 1000,
     hitPosition: null,
     count: 0,
-    currentTime: 10,
+    currentTime: 60,
+    countDownTime: setInterval(setTime, 1000),
   },
-  actions: { countDownTime: setInterval(setTime, 1000) },
 };
 
 function main() {
@@ -59,12 +59,16 @@ function setTime() {
   state.values.currentTime--;
   state.view.timeLeft.textContent = state.values.currentTime;
 
-  if (state.values.currentTime <= 0 || state.view.life.innerHTML == 0) {
+  if (state.values.currentTime == 0 || state.view.life.innerHTML <= 0) {
     alert(`Game Over! Your Score ${state.view.score.innerHTML}`);
-    state.values.currentTime = 10;
-    state.window.score = 0;
-    state.view.life.innerHTML = 5;
+    resetGame();
   }
+}
+
+function resetGame() {
+  state.values.currentTime = 60;
+  state.view.score.innerHTML = 0;
+  state.view.life.innerHTML = 5;
 }
 
 function hitSound() {
