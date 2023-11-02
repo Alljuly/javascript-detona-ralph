@@ -62,6 +62,7 @@ function setTime() {
   if (state.values.currentTime <= 0 || state.view.life.innerHTML == 0) {
     alert(`Game Over! Your Score ${state.view.score.innerHTML}`);
     state.values.currentTime = 10;
+    state.window.score = 0;
     state.view.life.innerHTML = 5;
   }
 }
