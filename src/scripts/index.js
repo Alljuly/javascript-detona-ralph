@@ -70,6 +70,7 @@ function resetGame() {
 }
 
 function hitSound() {
-  let audio = new Audio("src/assets/sounds/hit.m4a");
+  let audio = new Audio();
+  audio.src = "src/assets/sounds/hit.m4a"
   audio.play();
 }
